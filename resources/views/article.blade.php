@@ -22,12 +22,12 @@
             @foreach ($articles as $article)
                 <tr>
 
-                    <td>{{$msg->name}}</td>
+                    <td>{{$article->name}}</td>
 
-                    <td>{{$msg->subject}}</td>
-                    <td>{{$msg->created_at}}</td>
+                    <td>{{$article->subject}}</td>
+                    <td>{{$article->created_at}}</td>
                     <td>
-                        <a href="{{route('message.show',$msg->id)}}">
+                        <a href="{{route('message.show',$article->id)}}">
                             <button type="button" class="btn btn-primary">Show</button>
                         </a>
                         <form method="post" action="{{route('message.destroy',$msg->id)}}">
