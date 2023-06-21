@@ -82,6 +82,14 @@
 
                             </li>
                             <li class="sidebar-header" style="font-size: 18px;">
+                                <a href=" {{route('Article.index')}}">
+                                    <span>
+                                        Articles
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar-header" style="font-size: 18px;">
                                 <a href="{{route('message.index')}}">
                                     <span>
                                         Messages

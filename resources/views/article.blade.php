@@ -1,6 +1,6 @@
 <x-app-layout>
     @section('title')
-        {{ 'Messages' }}
+        {{ 'Article' }}
     @endsection
     @section('content')
         <table class="table table-striped-columns">
@@ -22,15 +22,23 @@
             @foreach ($articles as $article)
                 <tr>
 
-                    <td>{{$article->name}}</td>
-
-                    <td>{{$article->subject}}</td>
-                    <td>{{$article->created_at}}</td>
+                    <td>{{ $article->codePN }}</td>
+                    <td>{{ $article->typeMagasin }}</td>
+                    <td>{{ $article->designation }}</td>
+                    <td>{{ $article->stkMin }}</td>
+                    <td>{{ $article->stkMax }}</td>
+                    <td>{{ $article->stkActuel }}</td>
+                    <td>{{ $article->valeurActuel }}</td>
+                    <td>{{ $article->unitemesure }}</td>
+                    <td>{{ $article->CUMP }}</td>
+                    <td>{{ $article->codesection }}</td>
+                    <td>{{ $article->created_at }}</td>
+                    <td>{{ $article->updated_at }}</td>
                     <td>
-                        <a href="{{route('message.show',$article->id)}}">
+                        <a href="">
                             <button type="button" class="btn btn-primary">Show</button>
                         </a>
-                        <form method="post" action="{{route('message.destroy',$msg->id)}}">
+                        <form method="post" action="">
                             @csrf
                             @method('DELETE')
                             <input type="submit" class="btn btn-danger" value="Delete">

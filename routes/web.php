@@ -32,6 +32,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('project', ProjectController::class);
     Route::resource('message', MessageController::class);
+    Route::resource('/Article', \App\Http\Controllers\ArticleController::class);
+
 });
 Route::get('message.create', [MessageController::class, 'create']);
 require __DIR__.'/auth.php';

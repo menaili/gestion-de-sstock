@@ -23,7 +23,8 @@ return new class extends Migration
             $table->integer('valeurActuel');
             $table->string('unitemesure', 12);
             $table->integer('CUMP');
-            $table->string('codesection', 12);
+            $table->unsignedBigInteger('codesection');
+            $table->foreign('codesection')->references('codesection')->on('sections');
             $table->primary(['codePN', 'typeMagasin']);
             $table->timestamps();
         });
