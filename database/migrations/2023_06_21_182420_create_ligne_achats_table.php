@@ -15,15 +15,15 @@ return new class extends Migration
     {
         Schema::create('ligne_achats', function (Blueprint $table) {
             $table->unsignedBigInteger('quantiteAchat')->length(6);
-            $table->string('valeurA')->length(35);
-            $table->string('codePN')->length(35);
-            $table->string('typeMagasin')->length(10);
+            $table->string('valeurA',35);
+            $table->string('codePN',35);
+            $table->string('typeMagasin', 10);
             $table->unsignedBigInteger('numBA')->length(6);
             $table->date('dateBA');
             $table->foreign('codePN')->references('codePN')->on('articles');
             $table->foreign('typeMagasin')->references('typeMagasin')->on('articles');
-            $table->foreign('numBA')->references('numBA')->on('bonachats');
-            $table->foreign('dateachat')->references('dateachat')->on('bonachats');
+            $table->foreign('numBA')->references('numBA')->on('bon_achats');
+            $table->foreign('dateBA')->references('dateBA')->on('bon_achats');
             $table->timestamps();
         });
     }

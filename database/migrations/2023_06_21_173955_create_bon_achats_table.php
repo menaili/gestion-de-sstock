@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('bon_achats', function (Blueprint $table) {
             $table->unsignedBigInteger('numBA')->length(6);
-            $table->date('dateBA');
+            $table->date('dateBA')->index();
             $table->string('typeAchat');
             $table->unsignedBigInteger('tauxchange')->length(12);
             $table->unsignedBigInteger('valeurOR')->length(12);

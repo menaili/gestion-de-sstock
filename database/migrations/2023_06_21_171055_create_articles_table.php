@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->string('codePN', 35);
-            $table->string('typeMagasin', 10);
+            $table->string('typeMagasin', 10)->index();
             $table->string('designation', 50);
             $table->integer('stkMin');
             $table->integer('stkMax');

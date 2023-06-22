@@ -1,6 +1,6 @@
 <x-app-layout>
     @section('title')
-        {{ 'Article' }}
+        {{ "Bon D'achat" }}
     @endsection
     @section('content')
         <table class="table table-striped-columns">

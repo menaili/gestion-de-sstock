@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             RepereSeeder::class,
             SectionSeeder::class,
+            BonAchatSeeder::class,
             ArticleSeeder::class
         ]);
     }
