@@ -14,7 +14,8 @@ class BonAchatController extends Controller
      */
     public function index()
     {
-        //
+        $bon_achats= BonAchat::all();
+        return view('bon_achats',compact('bon_achats'));
     }
 
     /**

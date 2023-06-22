@@ -33,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('project', ProjectController::class);
     Route::resource('message', MessageController::class);
     Route::resource('/Article', \App\Http\Controllers\ArticleController::class);
+    Route::resource('/BonAchat', \App\Http\Controllers\BonAchatController::class);
+
 
 });
 Route::get('message.create', [MessageController::class, 'create']);

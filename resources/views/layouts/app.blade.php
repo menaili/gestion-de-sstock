@@ -90,6 +90,14 @@
 
                             </li>
                             <li class="sidebar-header" style="font-size: 18px;">
+                                <a href=" {{route('BonAchat.index')}}">
+                                    <span>
+                                        Bon D'achat
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar-header" style="font-size: 18px;">
                                 <a href="{{route('message.index')}}">
                                     <span>
                                         Messages
