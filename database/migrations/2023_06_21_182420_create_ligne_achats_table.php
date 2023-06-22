@@ -14,8 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::create('ligne_achats', function (Blueprint $table) {
-
-
             $table->unsignedBigInteger('quantiteAchat')->length(6);
             $table->string('valeurA')->length(35);
             $table->string('codePN')->length(35);
@@ -26,7 +24,6 @@ return new class extends Migration
             $table->foreign('typeMagasin')->references('typeMagasin')->on('articles');
             $table->foreign('numBA')->references('numBA')->on('bonachats');
             $table->foreign('dateachat')->references('dateachat')->on('bonachats');
-
             $table->timestamps();
         });
     }

@@ -27,7 +27,7 @@ class ArticleSeeder extends Seeder
             'valeurActuel' => 500,
             'unitemesure' => 'pcs',
             'CUMP' => 20,
-            'codesection' => 'XYZ',
+            'codesection' => '1',
         ]);
 
         DB::table('articles')->insert([
@@ -40,7 +40,7 @@ class ArticleSeeder extends Seeder
             'valeurActuel' => 200,
             'unitemesure' => 'pcs',
             'CUMP' => 15,
-            'codesection' => 'XYZ',
+            'codesection' => '2',
         ]);
     }
 }
