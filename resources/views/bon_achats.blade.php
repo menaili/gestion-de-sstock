@@ -34,7 +34,7 @@
                     <td>{{ $bon_achat->datecmd }}</td>
                     <td>{{ $bon_achat->codefacture }}</td>
                     <td>{{ $bon_achat->datefacture }}</td>
-
+                    <td>
                         <a href="">
                             <button type="button" class="btn btn-primary">Show</button>
                         </a>
